@@ -1,5 +1,5 @@
 $('.item').click(function() {
-  
+
   var dropMenu = $(this).children('.dropdownmenu');
 
 
@@ -11,5 +11,16 @@ $('.item').click(function() {
     dropMenu.addClass('open')
 
   }
+
+});
+$('.item').mouseenter(function() {
+  var dropMenu = $(this).children('.dropdownmenu');
+  dropMenu.addClass('open');
+
+});
+
+$('.item').mouseleave(function() {
+  var dropMenu = $(this).children('.dropdownmenu');
+  dropMenu.removeClass('open');
 
 });
