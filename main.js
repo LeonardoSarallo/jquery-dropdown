@@ -1,5 +1,6 @@
 $('.item').click(function() {
   $('dropdownmenu').removeClass('open');
-  var dropDownMenu = $(this).children('.dropdownmenu');
+  var dropMenu = $(this).children('.dropdownmenu');
   dropDownMenu.addClass('open');
+
 });
