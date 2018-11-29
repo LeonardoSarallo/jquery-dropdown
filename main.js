@@ -1,6 +1,15 @@
 $('.item').click(function() {
-  $('dropdownmenu').removeClass('open');
+  // $('.dropdownmenu').removeClass('open');
   var dropMenu = $(this).children('.dropdownmenu');
-  dropDownMenu.addClass('open');
+
+
+  if (dropMenu.hasClass('open')) {
+    dropMenu.removeClass('open')
+  }
+  else {
+    $('.dropdownmenu').removeClass('open');
+    dropMenu.addClass('open')
+
+  }
 
 });
