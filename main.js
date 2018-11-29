@@ -1,3 +1,5 @@
 $('.item').click(function() {
-  $(this).slideDown('.dropdown_menu_products');
+  $('dropdownmenu').removeClass('open');
+  var dropDownMenu = $(this).children('.dropdownmenu');
+  dropDownMenu.addClass('open');
 });
