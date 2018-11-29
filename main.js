@@ -1,3 +1,3 @@
 $('.item').click(function() {
-  $(this).show('dropdown_menu_products');
+  $(this).slideDown('dropdown_menu_products');
 });
